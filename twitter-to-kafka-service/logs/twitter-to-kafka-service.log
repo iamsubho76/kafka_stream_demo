@@ -1,0 +1,316 @@
+2022-02-08 10:25:43 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 1.8.0_302 on INTUL18be4e04e with PID 51126 (/Users/rsubhobroto/workspace/personnal/Kafka_Demo/twitter-to-kafka-service/target/classes started by rsubhobroto in /Users/rsubhobroto/workspace/personnal/Kafka_Demo)
+2022-02-08 10:25:43 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-02-08 10:25:44 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-02-08 10:25:44 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.0
+2022-02-08 10:25:44 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8cb0a5e9d3441962
+2022-02-08 10:25:44 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1644296144759
+2022-02-08 10:25:44 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:9094) could not be established. Broker may not be available.
+2022-02-08 10:25:45 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-02-08 10:25:45 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.321 seconds (JVM running for 4.33)
+2022-02-08 10:25:49 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2022-02-08 10:25:54 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-02-08 10:25:54 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-02-08 10:25:57 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-02-08 10:27:49 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-02-08 10:27:49 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-02-08 10:27:49 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-02-08 10:27:49 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-02-08 10:27:49 [SpringApplicationShutdownHook] INFO  c.o.m.k.d.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2022-02-08 10:28:04 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 1.8.0_302 on INTUL18be4e04e with PID 51242 (/Users/rsubhobroto/workspace/personnal/Kafka_Demo/twitter-to-kafka-service/target/classes started by rsubhobroto in /Users/rsubhobroto/workspace/personnal/Kafka_Demo)
+2022-02-08 10:28:04 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-02-08 10:28:05 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-02-08 10:28:05 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.0
+2022-02-08 10:28:05 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8cb0a5e9d3441962
+2022-02-08 10:28:05 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1644296285910
+2022-02-08 10:28:05 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (localhost/127.0.0.1:9094) could not be established. Broker may not be available.
+2022-02-08 10:28:06 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-02-08 10:28:06 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.054 seconds (JVM running for 3.862)
+2022-02-08 10:28:08 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2022-02-08 10:28:11 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-02-08 10:28:12 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-02-08 10:28:15 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-02-08 10:30:04 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-02-08 10:30:04 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-02-08 10:30:04 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-02-08 10:30:04 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-02-08 10:30:04 [SpringApplicationShutdownHook] INFO  c.o.m.k.d.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2022-02-08 10:38:45 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 1.8.0_302 on INTUL18be4e04e with PID 52223 (/Users/rsubhobroto/workspace/personnal/Kafka_Demo/twitter-to-kafka-service/target/classes started by rsubhobroto in /Users/rsubhobroto/workspace/personnal/Kafka_Demo)
+2022-02-08 10:38:45 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-02-08 10:38:46 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-02-08 10:38:46 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.0
+2022-02-08 10:38:46 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8cb0a5e9d3441962
+2022-02-08 10:38:46 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1644296926959
+2022-02-08 10:38:48 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-02-08 10:38:48 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.603 seconds (JVM running for 4.849)
+2022-02-08 10:38:54 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2022-02-08 10:39:05 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-02-08 10:39:05 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-02-08 10:39:18 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-02-08 10:54:50 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-08 10:54:50 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-02-08 10:54:50 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+2022-02-08 10:54:50 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=adminclient-1] Timed out 1 remaining operation(s) during close.
+2022-02-08 10:54:50 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-02-08 10:54:50 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-02-08 10:54:50 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-02-08 10:54:50 [SpringApplicationShutdownHook] INFO  c.o.m.k.d.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2022-02-08 10:54:50 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:772)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.org.ms.kafka.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:37)
+Caused by: com.org.ms.kafka.demo.admin.exception.KafkaClientException: Reached max number of retry for reading kafka topic(s)!
+	at com.org.ms.kafka.demo.admin.client.KafkaAdminClient.checkMaxRetry(KafkaAdminClient.java:118)
+	at com.org.ms.kafka.demo.admin.client.KafkaAdminClient.checkSchemaRegistry(KafkaAdminClient.java:88)
+	at com.org.ms.kafka.demo.twitter.to.kafka.service.init.impl.KafkaStreamInitializer.init(KafkaStreamInitializer.java:29)
+	at com.org.ms.kafka.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:44)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:769)
+	... 5 common frames omitted
+2022-02-08 10:55:03 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 1.8.0_302 on INTUL18be4e04e with PID 53723 (/Users/rsubhobroto/workspace/personnal/Kafka_Demo/twitter-to-kafka-service/target/classes started by rsubhobroto in /Users/rsubhobroto/workspace/personnal/Kafka_Demo)
+2022-02-08 10:55:03 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-02-08 10:55:04 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-02-08 10:55:04 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.0
+2022-02-08 10:55:04 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8cb0a5e9d3441962
+2022-02-08 10:55:04 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1644297904496
+2022-02-08 10:55:05 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-02-08 10:55:05 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.892 seconds (JVM running for 5.164)
+2022-02-08 10:55:06 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2022-02-08 10:55:08 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-02-08 10:55:08 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-02-08 10:55:08 [main] INFO  c.o.m.k.d.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-02-08 20:35:45 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 2 (/127.0.0.1:9093) could not be established. Broker may not be available.
+2022-02-08 20:35:45 [kafka-admin-client-thread | adminclient-1] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=adminclient-1] Connection to node 3 (/127.0.0.1:9094) could not be established. Broker may not be available.
+2022-02-08 20:35:45 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-02-08 20:35:45 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=adminclient-1] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+2022-02-08 20:35:45 [kafka-admin-client-thread | adminclient-1] INFO  o.a.k.clients.admin.KafkaAdminClient - [AdminClient clientId=adminclient-1] Timed out 1 remaining operation(s) during close.
+2022-02-08 20:35:45 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-02-08 20:35:45 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-02-08 20:35:45 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-02-08 20:35:45 [SpringApplicationShutdownHook] INFO  c.o.m.k.d.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!

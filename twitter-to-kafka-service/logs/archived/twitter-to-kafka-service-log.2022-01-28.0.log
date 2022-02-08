@@ -1,0 +1,7 @@
+2022-01-28 09:17:37 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 1.8.0_302 on INTUL18be4e04e with PID 44714 (/Users/rsubhobroto/workspace/personnal/Kafka_Demo/twitter-to-kafka-service/target/classes started by rsubhobroto in /Users/rsubhobroto/workspace/personnal/Kafka_Demo)
+2022-01-28 09:17:37 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-28 09:17:37 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.874 seconds (JVM running for 1.573)
+2022-01-28 09:18:00 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2022-01-28 09:18:00 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-01-28 09:18:14 [main] INFO  c.o.m.k.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
+2022-01-28 09:21:44 [pool-1-thread-1] INFO  c.o.m.k.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text adipiscing Maecenas lectus consectetuer ultricies sed amet Java massa lectus elit lectus consectetuer adipiscing sending to kafka topic

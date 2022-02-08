@@ -1,0 +1,21 @@
+2022-01-27 23:06:47 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 1.8.0_302 on INTUL18be4e04e with PID 27671 (/Users/rsubhobroto/workspace/personnal/Kafka_Demo/twitter-to-kafka-service/target/classes started by rsubhobroto in /Users/rsubhobroto/workspace/personnal/Kafka_Demo)
+2022-01-27 23:06:47 [main] INFO  c.o.m.k.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-27 23:06:47 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.org.ms.kafka.demo.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-01-27 23:06:47 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 23:06:47 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.org.ms.kafka.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.org.ms.kafka.demo.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.org.ms.kafka.demo.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
+
